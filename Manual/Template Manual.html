@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Hexadécimal — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <script src="js/ktane-utils.js"></script>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes CIA Edition</span>
+                <span class="page-header-section-title">Hexadécimal</span>
+            </div>
+            <div class="page-content">
+                <h2>Sur le sujet de l'Hexadécimal</h2>
+                <p class="flavour-text">Aujourd'hui, on a besoin de compétences en design web pour désamorcer une bombe ! Décodez la couleur avant que la bombe explose.</p>
+
+                <p>Ce module comporte un écran numérique affichant un code couleur hexadécimal à 6 caractères, ainsi que six boutons colorés.</p>
+
+                <h3>Règles de Désamorçage</h3>
+                <ol>
+                    <li>Lisez le code hexadécimal affiché sur l'écran (au format <code>#RRVVBB</code>).</li>
+                    <li>Convertissez les paires de caractères pour estimer la quantité de chaque couleur primaire :
+                        <ul>
+                            <li><strong>RR</strong> représente le canal <strong>Rouge</strong> (00 = min, FF = max).</li>
+                            <li><strong>VV</strong> représente le canal <strong>Vert</strong> (00 = min, FF = max).</li>
+                            <li><strong>BB</strong> représente le canal <strong>Bleu</strong> (00 = min, FF = max).</li>
+                        </ul>
+                    </li>
+                    <li>Estimez la couleur finale à l'aide des tableaux ci-dessous et trouvez le bouton correspondant.</li>
+                    <li>Appuyez sur le bon bouton coloré pour passer à l'étape suivante.</li>
+                    <li>Répétez ce processus <strong>3 fois</strong> au total pour résoudre le module.</li>
+                </ol>
+
+                <h3>Évaluation des Intensités (De 0 à F)</h3>
+                <table>
+                    <tr>
+                        <th>Valeur Hexadécimale</th>
+                        <th>Intensité Lumineuse</th>
+                    </tr>
+                    <tr>
+                        <td><code>00 - 3F</code></td>
+                        <td>Très Faible / Éteint</td>
+                    </tr>
+                    <tr>
+                        <td><code>40 - 7F</code></td>
+                        <td>Faible</td>
+                    </tr>
+                    <tr>
+                        <td><code>80 - BF</code></td>
+                        <td>Moyenne</td>
+                    </tr>
+                    <tr>
+                        <td><code>C0 - FF</code></td>
+                        <td>Forte / Maximum</td>
+                    </tr>
+                </table>
+
+                <h3>Guide de Mélange des Couleurs</h3>
+                <p>Si plusieurs canaux ont une forte intensité, les couleurs se mélangent (synthèse additive) :</p>
+                <ul>
+                    <li><strong>Rouge + Vert</strong> = Jaune / Orange</li>
+                    <li><strong>Rouge + Bleu</strong> = Magenta / Rose / Violet</li>
+                    <li><strong>Vert + Bleu</strong> = Cyan / Turquoise</li>
+                    <li><strong>Rouge + Vert + Bleu</strong> = Blanc / Gris clair</li>
+                    <li><strong>Aucune teinte</strong> = Noir / Gris foncé</li>
+                </ul>
+                
+                <blockquote>
+                    <strong>Astuce :</strong> Si un seul canal est très fort (ex: <code>#F12210</code>), la couleur sera pure (ici, un rouge vif). Si toutes les valeurs sont très faibles (ex: <code>#1A2B15</code>), la couleur sera très sombre (proche du noir ou gris foncé).
+                </blockquote>
+
+                <p><em>Note : Appuyer sur un mauvais bouton provoquera une erreur immédiate, mais ne réinitialisera pas votre progression.</em></p>
+            </div>
+            <div class="page-footer relative-footer">Page 1 de 1</div>
+        </div>
+    </div>
+</body>
+</html>
