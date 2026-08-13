@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>ASCII — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font.css">
+    <script src="../../js/ktane-utils.js"></script>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes CIA Edition</span>
+                <span class="page-header-section-title">ASCII</span>
+            </div>
+            <div class="page-content">
+                <h2>Sur le sujet d'ASCII</h2>
+                <p class="flavour-text">Des lettres, des nombres, et du stress. Convertissez correctement chaque caractère avant que la bombe ne vous convertisse en souvenir.</p>
+
+                <p>Ce module affiche un mot en minuscules. Convertissez chaque lettre en score en appliquant les règles ci-dessous dans l'ordre, puis entrez la somme totale.</p>
+
+                <h3>Règles de Désamorçage</h3>
+                <ol>
+                    <li>Le module affiche un mot en <strong>minuscules</strong> (a-z).</li>
+                    <li>Pour chaque lettre, appliquez <strong>la première règle valide</strong> dans la table de priorité.</li>
+                    <li>Additionnez les scores de toutes les lettres du mot.</li>
+                    <li>Entrez la somme sur le module, puis validez avec le button à droite.</li>
+                    <li>Répétez ce processus <strong>3 fois</strong> pour résoudre le module.</li>
+                </ol>
+
+                <blockquote>
+                    <strong>Important :</strong> Les codes ASCII utilisés sont ceux des <strong>lettres minuscules</strong> :
+                    <code>a = 97</code> à <code>z = 122</code>.
+                </blockquote>
+
+                <h3>Table des Règles (Priorité décroissante)</h3>
+                <p>Pour chaque lettre du mot, suivez cette liste de haut en bas :</p>
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Condition (sur la lettre)</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Si la lettre est <code>a</code> ou <code>e</code></td>
+                        <td><strong>+15</strong></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><strong>Sinon, si</strong> la lettre est une voyelle : <code>a</code>, <code>e</code>, <code>i</code>, <code>o</code>, <code>u</code>, <code>y</code></td>
+                        <td><strong>+11</strong></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><strong>Sinon, si</strong> la lettre est <code>b</code>, <code>d</code> ou <code>e</code></td>
+                        <td><strong>+7</strong></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><strong>Sinon, si</strong> la lettre est dans le mot "<code>polytech</code>"</td>
+                        <td><strong>+5</strong></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><strong>Sinon, si</strong> la lettre est dans le mot "<code>examen</code>"</td>
+                        <td><strong>-10</strong></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><strong>Sinon, si</strong> la lettre est dans le mot "<code>informatique</code>"</td>
+                        <td><strong>+20</strong></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><strong>Sinon</strong></td>
+                        <td><strong>Code ASCII de la lettre</strong></td>
+                    </tr>
+                </table>
+
+                <h3>Bonus/Malus de Mot <strong>(en plus de la somme des lettres)</strong></h3>
+
+                <p>Après avoir obtenu le score de chaque lettre, appliquez les Bonus/Malus suivant, qui ne sont <strong>valides qu'une seule par mot</strong> :</p>
+
+                <ul>
+                    <li>Si le mot contient au moins <strong>3 voyelles</strong> : <strong>+8</strong></li>
+                    <li>Si le mot contient au moins <strong>2 fois la même lettre</strong> : <strong>-5</strong> (non cumulable, valide une fois par mot)</li>
+                    <li>Si la première et la dernière lettre sont identiques : <strong>+12</strong></li>
+                    <li>Si le mot a une longueur <strong>paire</strong> : <strong>+4</strong>, sinon : <strong>-3</strong></li>
+                </ul>
+
+                <h3>Table ASCII Minuscule (référence)</h3>
+                <table>
+                    <tr><th>Lettre</th><th>ASCII</th><th>Lettre</th><th>ASCII</th><th>Lettre</th><th>ASCII</th><th>Lettre</th><th>ASCII</th></tr>
+                    <tr><td><code>a</code></td><td>97</td><td><code>h</code></td><td>104</td><td><code>o</code></td><td>111</td><td><code>v</code></td><td>118</td></tr>
+                    <tr><td><code>b</code></td><td>98</td><td><code>i</code></td><td>105</td><td><code>p</code></td><td>112</td><td><code>w</code></td><td>119</td></tr>
+                    <tr><td><code>c</code></td><td>99</td><td><code>j</code></td><td>106</td><td><code>q</code></td><td>113</td><td><code>x</code></td><td>120</td></tr>
+                    <tr><td><code>d</code></td><td>100</td><td><code>k</code></td><td>107</td><td><code>r</code></td><td>114</td><td><code>y</code></td><td>121</td></tr>
+                    <tr><td><code>e</code></td><td>101</td><td><code>l</code></td><td>108</td><td><code>s</code></td><td>115</td><td><code>z</code></td><td>122</td></tr>
+                    <tr><td><code>f</code></td><td>102</td><td><code>m</code></td><td>109</td><td><code>t</code></td><td>116</td><td></td><td></td></tr>
+                    <tr><td><code>g</code></td><td>103</td><td><code>n</code></td><td>110</td><td><code>u</code></td><td>117</td><td></td><td></td></tr>
+                </table>
+
+                <h3>Exemple de Calcul</h3>
+                <p>Mot affiché : <code>codes</code></p>
+                <ul>
+                    <li><code>c</code> → règle #4 (<code>polytech</code>) = +5</li>
+                    <li><code>o</code> → règle #2 (voyelle) = +11</li>
+                    <li><code>d</code> → règle #3 (<code>bde</code>) = +7</li>
+                    <li><code>e</code> → règle #1 (a/e) = +15</li>
+                    <li><code>s</code> → règle #7 (ascii) = +115</li>
+                </ul>
+                <p>Sommes des scores des lettres <strong>modulo 100</strong> = ( 5 + 11 + 7 + 15 + 115 ) % 100 = 153 % 100 = <strong>53</strong></p>
+                <p>Sans oublier les Bonus/Malus du mot :</p>
+                <ul>
+                    <li>Voyelles : 2 → pas de +8 : 0</li>
+                    <li>Lettres répétées : non → pas de -5 : 0</li>
+                    <li>Première = dernière ? non : 0</li>
+                    <li>Longueur 5 (impaire) → <strong>-3</strong></li>
+                </ul>
+                <p>Total final = 53 + 0 + 0 + 0 - 3 = <strong>50</strong></p>
+
+                <p><em>Note : Une entrée incorrecte provoque une erreur immédiate, mais ne réinitialise pas les étapes déjà validées.</em></p>
+            </div>
+            <div class="page-footer relative-footer">Page 1 de 1</div>
+        </div>
+    </div>
+</body>
+</html>
