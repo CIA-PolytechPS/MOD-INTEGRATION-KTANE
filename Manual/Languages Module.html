@@ -1,0 +1,207 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Langages de Programmation — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
+    <script src="../../js/ktane-utils.js"></script>
+    <style>
+        .code-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .code-table th, .code-table td { border: 1px solid #000; padding: 6px; text-align: left; vertical-align: top; }
+        .code-table th { background-color: #f0f0f0; }
+        .code-box { font-family: monospace; font-size: 0.85em; white-space: pre-wrap; background: #fafafa; padding: 4px; border: 1px dashed #999; }
+        .language-logo {width: 90px;}
+    </style>
+</head>
+<body>
+    <div class="section">
+        <!-- PAGE 1 : RÈGLES ET MOTS-CLÉS -->
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes CIA Edition</span>
+                <span class="page-header-section-title">Langages de Programmation</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/LanguageModule.svg" class="diagram">
+
+                <h2>Sur le sujet des Langages de Programmation</h2>
+                <p class="flavour-text">Un hacker a injecté des scripts étranges dans la bombe. Identifiez la technologie utilisée avant qu'un dépassement de tampon ne vous efface de la matrice !</p>
+
+                <p>Ce module comporte un écran affichant un <strong>extrait de code</strong> ou une suite de <strong>mots-clés</strong>, ainsi que trois boutons.</p>
+
+                <h3>Règles de Désamorçage</h3>
+                <ol>
+                    <li>Analysez les mots-clés ou la syntaxe de l'extrait affiché à l'écran.</li>
+                    <li>Utilisez le <strong>Tableau A (Mots-clés)</strong> en page 1 ou le <strong>Tableau B (Extraits de code)</strong> en page 2 pour identifier le langage correspondant.</li>
+                    <li>Attention aux pièges : certains mots-clés comme <code>echo</code> ou <code>main</code> sont partagés par plusieurs langages. Validez toujours avec les autres indices disponibles.</li>
+                    <li>Appuyez sur le bouton du langage identifié pour valider l'étape.</li>
+                    <li>Désamorcez avec succès <strong>3 étapes</strong> consécutives pour résoudre le module.</li>
+                </ol>
+
+                <h3>Tableau A : Identification des Logos</h3>
+                <table class="code-table">
+                    <tr>
+                        <td><strong>Bash</strong></td>
+                        <td><strong>Cpp (C++)</strong></td>
+                        <td><strong>CSS</strong></td>
+                        <td><strong>HTML</strong></td>
+                        <td><strong>Java</strong></td>
+                        <td><strong>JavaScript</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/Bash.png"/></td>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/Cpp.png"/></td>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/CSS.png"/></td>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/HTML.png"/></td>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/Java.png"/></td>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/Javascript.png"/></td>
+                    </tr>
+                </table>
+                <table class="code-table">
+                    <tr>
+                        <td><strong>Kotlin</strong></td>
+                        <td><strong>PHP</strong></td>
+                        <td><strong>Python</strong></td>
+                        <td><strong>Rust</strong></td>
+                        <td><strong>SQL</strong></td>
+                        <td><strong>CIA</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/Kotlin.png"/></td>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/PHP.png"/></td>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/Python.png"/></td>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/Rust.png"/></td>
+                        <td><img class="language-logo" src="./img/LanguagesLogos/SQL.png"/></td>
+                        <td><img class="language-logo" src="./img/CIA.png"/></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page-footer relative-footer">Page 1 de 2</div>
+        </div>
+
+        <!-- PAGE 2 : EXTRAITS DE CODE -->
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes CIA Edition</span>
+                <span class="page-header-section-title">Langages de Programmation</span>
+            </div>
+            <div class="page-content">
+                <h3>Tableau B : Archives des Extraits de Code Suspects</h3>
+                <p>Si l'écran affiche une structure de code complexe, référez-vous aux signatures ci-dessous :</p>
+
+                <table class="code-table">
+                    <tr>
+                        <th style="width: 20%;">Langage</th>
+                        <th>Signature / Extrait de Code Récupéré</th>
+                    </tr>
+                    <tr>
+                        <td><strong>JavaScript</strong></td>
+                        <td><div class="code-box">const logger = require('my-logger');
+async function loadUserData(userId, callback) {
+    const response = await fetch(`https://api.com{userId}`);
+    console.log("Data status: success");
+    callback(response);
+}</div></td>
+                    </tr>
+                    <tr>
+                        <td><strong>PHP</strong></td>
+                        <td><div class="code-box">&lt;?php
+class UserController {
+    public function showUsers($mysqli) {
+        $this->db = $mysqli;
+        $array = ["admin", "editor", "guest"];
+        foreach ($array as $role) {
+            echo "Role active: " . $role;
+        }
+    }
+}</div></td>
+                    </tr>
+                    <tr>
+                        <td><strong>HTML</strong></td>
+                        <td><div class="code-box">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;div id="main-content"&gt;
+        &lt;img src="logo.png"&gt;
+        &lt;a href="https://unity.com"&gt;Link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</div></td>
+                    </tr>
+                    <tr>
+                        <td><strong>CSS</strong></td>
+                        <td><div class="code-box">.card {
+    display: flex; margin: 20px;
+    padding: 15px; color: #333333;
+}
+@media (max-width: 768px) {
+    .card { margin: 5px; }
+}</div></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Python</strong></td>
+                        <td><div class="code-box">import sys
+def check_system_status(code):
+    if code == 200:
+        print("System OK")
+    elif code == 500:
+        print("Server Error")</div></td>
+                    </tr>
+                    <tr>
+                        <td><strong>SQL</strong></td>
+                        <td><div class="code-box">INSERT INTO logs (action) VALUES ('Backup');
+SELECT u.name, p.title FROM users u
+JOIN posts p ON u.id = p.user_id
+WHERE u.status = 'active';</div></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Java</strong></td>
+                        <td><div class="code-box">package com.game.quiz;
+public class GameManager extends BaseSystem {
+    public static void main(String[] args) {
+        System.out.println("Starting application...");
+    }
+}</div></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kotlin</strong></td>
+                        <td><div class="code-box">data class Player(val id: Int, var score: Int)
+fun main() {
+    val name: String? = "UnityUser"
+    println(name?.length)
+}</div></td>
+                    </tr>
+                    <tr>
+                        <td><strong>C++</strong></td>
+                        <td><div class="code-box">#include &lt;iostream&gt;
+int main() {
+    int value = 42; int* pointer = &value;
+    std::cout &lt;&lt; "Enter a number: ";
+    std::cin &gt;&gt; *pointer;
+}</div></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bash</strong></td>
+                        <td><div class="code-box">#!/bin/bash
+if [ -z "$1" ]; then
+
+echo "Error" && exit 1fisudo chmod +x "$1"grep "ERROR" "$1"Rustfn main() {let mut guess = String::new();match std::io::stdin().read_line(&mut guess) {Ok(_) => println!("You guessed: {}", guess),Err(e) => panic!("Error: {}", e)}}
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+                <p><em>Une mauvaise réponse déclenchera une erreur immédiate sur la bombe, mais l'étape en cours ne sera pas réinitialisée. Prenez votre temps pour lire la syntaxe !</em></p>
+            </div>
+            <div class="page-footer relative-footer">Page 2 de 2</div>
+        </div>
+    </div>
+</body>
+</html>
