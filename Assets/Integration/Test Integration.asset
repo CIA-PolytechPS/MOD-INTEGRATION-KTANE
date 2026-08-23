@@ -28,8 +28,20 @@ MonoBehaviour:
       - hexModule
     - Count: 1
       AllowedSources: 2
+      ComponentTypes: 02000000
+      SpecialComponentType: 0
+      ModTypes:
+      - hexModule
+    - Count: 1
+      AllowedSources: 2
       ComponentTypes: 
       SpecialComponentType: 0
       ModTypes:
-      - caractersModule
+      - asciiModule
+    - Count: 1
+      AllowedSources: 2
+      ComponentTypes: 
+      SpecialComponentType: 0
+      ModTypes:
+      - asciiModuleV2
   PacingEventsEnabled: 0
