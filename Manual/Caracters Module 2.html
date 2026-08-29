@@ -10,23 +10,16 @@
     <link rel="stylesheet" type="text/css" href="./css/font.css">
     <script src="../../js/ktane-utils.js"></script>
     <style>
-        .keypad-table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 100%;
-        }
-        .keypad-table th {
-            background-color: #f4f4f4;
-            font-weight: bold;
-            font-size: 1em;
-        }
         .keypad-table td, .keypad-table th {
-            border: 2px solid #000;
             padding: 10px 4px;
+            min-width: 40px;
             text-align: center;
             font-family: "Special Elite", "Courier New", monospace;
             font-size: 1.0em;
-            white-space: nowrap;
+            white-space: nowrap; 
+        }
+        .keypad-table .keypad-table-spacer {
+            min-width: 0px;
         }
     </style>
 </head>
@@ -53,150 +46,216 @@
 
                 <table class="keypad-table">
                     <tr>
-                        <th>C1</th>
-                        <th>C2</th>
-                        <th>C3</th>
-                        <th>C4</th>
-                        <th>C5</th>
-                        <th>C6</th>
-                        <th>C7</th>
-                        <th>C8</th>
-                        <th>C9</th>
-                        <th>C10</th>
-                        <th>C11</th>
-                    </tr>
-                    <tr>
                         <td>_</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>/*</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>{</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>#</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>)</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>[</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>&gt;</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>&gt;</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>§</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>!</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>}</td>
                     </tr>
                     <tr>
                         <td>{</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>]</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>~</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>/</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>]</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>--</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>~</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>&lt;</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>/</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>,</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>&</td>
                     </tr>
                     <tr>
                         <td>£</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>||</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>&&</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>||</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>==</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>_</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>}</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>&</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>--</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>(</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>,</td>
                     </tr>
                     <tr>
                         <td>§</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>[</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>!</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>.</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>*/</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>==</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>[</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>£</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>==</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>*/</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>/*</td>
                     </tr>
                     <tr>
                         <td>!</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>{</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>++</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>£</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>&lt;</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>]</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>!</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>}</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>£</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>[</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>-></td>
                     </tr>
                     <tr>
                         <td>}</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>?.</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>*</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>}</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>||</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>£</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>==</td>
-                        <td>;</td>
+                        <th class="keypad-table-spacer"></th>
+                        <td>:</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>::</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>!=</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>~</td>
                     </tr>
                     <tr>
                         <td>&gt;</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>)</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>\</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>)</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>^</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>|</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>|</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>,</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>,</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>/</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>++</td>
                     </tr>
                     <tr>
                         <td>(</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>_</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>!=</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>==</td>
-                        <td>;</td>
+                        <th class="keypad-table-spacer"></th>
+                        <td>:</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>&&</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>?.</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>]</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>&lt;</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>~</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>::</td>
                     </tr>
                     <tr>
                         <td>.</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>$</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>||</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>/*</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>\</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>,</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>||</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>?.</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>-></td>
+                        <th class="keypad-table-spacer"></th>
                         <td>\</td>
+                        <th class="keypad-table-spacer"></th>
                         <td>!</td>
                     </tr>
                 </table>
-<<<<<<< HEAD
-
-                <blockquote>
-                    <strong>ATTENTION À LA SYNTAXE :</strong> De nombreuses colonnes partagent des caractères très proches. Différenciez bien les symboles uniques des opérateurs doubles (par exemple <code>!</code> et <code>!=</code>, <code>&</code> et <code>&&</code>, ou <code>/</code> et <code>/*</code>). Une description imprécise mènera à l'échec.
-                </blockquote>
-=======
->>>>>>> dev
             </div>
             <div class="page-footer relative-footer">Page 1 de 1</div>
         </div>
     </div>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> dev
