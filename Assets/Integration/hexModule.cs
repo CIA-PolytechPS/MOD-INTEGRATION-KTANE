@@ -9,6 +9,7 @@ public class hexModule : MonoBehaviour
     public TextMesh DisplayText;
     public MeshRenderer DisplayBackground;
     public KMSelectable[] Buttons;
+    public MeshRenderer[] Leds;
     public Color[] AvailableColors; // Liste des couleurs possibles
 
     public Color CurrentColor { get; private set; } // Couleur actuelle affichée
@@ -75,6 +76,17 @@ public class hexModule : MonoBehaviour
         }
     }
 
+    void UpdateLight(int index)
+    {
+        MeshRenderer led = Leds[index].GetComponent<MeshRenderer>();
+        if (led)
+        {
+            led.material.color = new Color(0f, 1f, 0f);
+        }
+
+    }
+
+
     void OnButtonPress(int index)
     {
         Buttons[index].AddInteractionPunch();
@@ -86,6 +98,7 @@ public class hexModule : MonoBehaviour
         {
             Debug.Log("Correct ");
             count++;
+            UpdateLight(count - 1);
             if (count >= 3)
             {
                 BombModule.HandlePass();
