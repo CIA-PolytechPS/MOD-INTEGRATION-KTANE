@@ -13,6 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Integration CIA
   Sections:
-  - Title: Integration
+  - Title: New Section
     MissionIDs:
-    - Test Integration
+    - "Int\xE9gration 5 minutes"
+    - "Int\xE9gration 8 min"
